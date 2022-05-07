@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+# Bookstore
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Bookstore is a website that allows the user to
 
-## Available Scripts
+- Display a list of books.
+- Add a book.
+- Remove a selected book.
 
-In the project directory, you can run:
+## Deployment
 
-### `npm start`
+(Link will be provided after finishing the project)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Major Languages
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- HTML
+- CSS
+- JavaScript
+- React JS
+- Redux
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To get a local copy up and running follow these simple example steps.
 
-### `npm run build`
+### Setup
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To get a local copy up and running follow these simple steps.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To setup the Awesome-books-Project, in the repo page:
+click on code (dropdown list) > Download as ZIP;
+or open terminal of path you want to install project and run this command <br>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```sh
+  git clone git@github.com:MohammedElseddik/bookstore.git
+```
 
-### `npm run eject`
+## 🛠 Installation & Set Up to run the project locally
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Install Node Modules
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```sh
+   npm install
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. Start the development server
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```sh
+   npm start
+   ```
 
-## Learn More
+the project will be opened in [http://localhost:3000] on the browser.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Authors
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+👤 **Mohammed Elseddik Rebbouh**
 
-### Code Splitting
+- GitHub: [@githubhandle](https://github.com/MohammedElseddik)
+- Twitter: [@twitterhandle](https://twitter.com/RebbouhElseddik)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mohammed-elseddik-rebbouh-676500192)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🤝 Contributing
 
-### Analyzing the Bundle Size
+Contributions, issues, and feature requests are welcome!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Feel free to check the [issues page](https://github.com/MohammedElseddik/bookstore/issues).
 
-### Making a Progressive Web App
+## Show your support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Give a ⭐️ if you like this project!
 
-### Advanced Configuration
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- My coding partners
+- Hat tip to anyone whose code was used.
+- Microverse team.
+- My standup team.
 
-### Deployment
+## 📝 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is [MIT](/MIT.md) licensed.
