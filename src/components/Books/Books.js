@@ -1,5 +1,6 @@
 import React from 'react'
 import Book from '../Book/Book';
+import AddBookForm from '../AddBookForm/AddBookForm';
 
 export const Books = () => {
     const books = [
@@ -24,6 +25,7 @@ export const Books = () => {
     console.log(books)
     return (
         <div className='Books'>
+
             <Book
                 bookTitle={books[0].title}
                 bookAuthor={books[0].author}
@@ -41,6 +43,9 @@ export const Books = () => {
                 bookAuthor={books[2].author}
                 bookCategory={books[2].category}
             />
+
+            <AddBookForm />
+
         </div>
     )
 }
