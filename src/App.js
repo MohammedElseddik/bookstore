@@ -1,7 +1,9 @@
 import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import NavBar from './components/navBar/NavBar';
 import Books from './components/Books/Books';
+import Categories from './components/Categories/Categories';
+import React from 'react';
 
 function App() {
   return (
@@ -9,14 +11,12 @@ function App() {
       <NavBar />
       <main>
         <Routes>
-          <Route path='books' />
-          <Route path='books' />
-          <Route path='categories' />
+          <Route path="/books" element={<Books />} />
+          <Route path="/categories" element={<Categories />} />
         </Routes>
       </main>
-      <Books />
     </BrowserRouter>
   );
-}
+};
 
 export default App;
