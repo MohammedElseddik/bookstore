@@ -1,9 +1,9 @@
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import React from 'react';
 import NavBar from './components/navBar/NavBar';
 import Books from './components/Books/Books';
 import Categories from './components/Categories/Categories';
-import React from 'react';
 
 function App() {
   return (
@@ -17,6 +17,6 @@ function App() {
       </main>
     </BrowserRouter>
   );
-};
+}
 
 export default App;
