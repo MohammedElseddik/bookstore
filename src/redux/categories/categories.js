@@ -1,8 +1,8 @@
-const CATEGORIES_STATUS = 'CATEGORY_STATUS';
+const CHECK_CATEGORIES_STATUS = "bookstore/categories/CATEGORY_STATUS";
 const categoryInitailState = [];
 
 export const caretgoriesStatusAction = (status) => ({
-  type: CATEGORIES_STATUS,
+  type: CHECK_CATEGORIES_STATUS,
   payload: {
     status,
   },
@@ -10,10 +10,10 @@ export const caretgoriesStatusAction = (status) => ({
 
 const categoriesReducer = (state = categoryInitailState, action) => {
   switch (action.type) {
-    case CATEGORIES_STATUS:
+    case CHECK_CATEGORIES_STATUS:
       return [
         {
-          status: 'Under construction',
+          status: "Under construction",
         },
       ];
     default:
