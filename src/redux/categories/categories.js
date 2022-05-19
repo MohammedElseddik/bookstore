@@ -1,4 +1,4 @@
-const CATEGORIES_STATUS = "CATEGORY_STATUS";
+const CATEGORIES_STATUS = 'CATEGORY_STATUS';
 const categoryInitailState = [];
 
 export const caretgoriesStatusAction = (status) => ({
@@ -13,7 +13,7 @@ const categoriesReducer = (state = categoryInitailState, action) => {
     case CATEGORIES_STATUS:
       return [
         {
-          status: "Under construction",
+          status: 'Under construction',
         },
       ];
     default:

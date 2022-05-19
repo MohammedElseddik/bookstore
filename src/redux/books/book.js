@@ -1,5 +1,5 @@
-const ADD_BOOK = "bookstore/books/ADD_BOOK";
-const REMOVE_BOOK = "bookstore/books/REMOVE_BOOK";
+const ADD_BOOK = 'bookstore/books/ADD_BOOK';
+const REMOVE_BOOK = 'bookstore/books/REMOVE_BOOK';
 let initailState = [];
 
 export const bookAddedAction = (book) => ({
@@ -30,14 +30,10 @@ const bookReducer = (state = initailState, action) => {
         },
       ];
       return initailState;
-      break;
 
     case REMOVE_BOOK:
-      initailState = state.filter((book) => {
-        return book.id !== action.payload.id;
-      });
+      initailState = state.filter((book) => book.id !== action.payload.id);
       return initailState;
-      break;
 
     default:
       return state;
