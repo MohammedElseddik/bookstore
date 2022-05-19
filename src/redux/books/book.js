@@ -1,9 +1,9 @@
-const BOOK_ADDED = "bookstore/books/BOOK_ADDED";
-const BOOK_REMOVED = "bookstore/books/BOOK_REMOVED";
+const ADD_BOOK = "bookstore/books/ADD_BOOK";
+const REMOVE_BOOK = "bookstore/books/REMOVE_BOOK";
 let initailState = [];
 
 export const bookAddedAction = (book) => ({
-  type: BOOK_ADDED,
+  type: ADD_BOOK,
   payload: {
     title: book.title,
     author: book.author,
@@ -12,7 +12,7 @@ export const bookAddedAction = (book) => ({
 });
 
 export const bookRemovedAction = (id) => ({
-  type: BOOK_REMOVED,
+  type: REMOVE_BOOK,
   payload: {
     id,
   },
@@ -20,7 +20,7 @@ export const bookRemovedAction = (id) => ({
 
 const bookReducer = (state = initailState, action) => {
   switch (action.type) {
-    case BOOK_ADDED:
+    case ADD_BOOK:
       initailState = [
         ...state,
         {
@@ -32,7 +32,7 @@ const bookReducer = (state = initailState, action) => {
       return initailState;
       break;
 
-    case BOOK_REMOVED:
+    case REMOVE_BOOK:
       initailState = state.filter((book) => {
         return book.id !== action.payload.id;
       });
