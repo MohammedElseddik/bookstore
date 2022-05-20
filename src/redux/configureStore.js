@@ -1,6 +1,6 @@
-import { createStore, combineReducers } from "redux";
-import bookReducer from "./books/book";
-import categoriesReducer from "./categories/categories";
+import { createStore, combineReducers } from 'redux';
+import bookReducer from './books/book';
+import categoriesReducer from './categories/categories';
 
 const rootReducer = combineReducers({
   book: bookReducer,
@@ -8,5 +8,6 @@ const rootReducer = combineReducers({
 });
 
 const store = createStore(rootReducer);
+console.log(rootReducer);
 
 export default store;
