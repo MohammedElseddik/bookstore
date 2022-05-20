@@ -1,15 +1,18 @@
+import { v4 as uuidv4 } from 'uuid';
+
 const ADD_BOOK = 'bookstore/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookstore/books/REMOVE_BOOK';
+
 let initailState = [
   {
-    id: 'The Redux Books',
+    id: '1',
     title: 'The Redux Books',
     author: 'Suzanne Collins',
     category: 'Action',
   },
 
   {
-    id: 'The Redux Books',
+    id: '2',
     title: 'The React Books',
     author: 'Frank Herbert',
     category: 'Science Fiction',
@@ -19,7 +22,7 @@ let initailState = [
 export const bookAddedAction = (book) => ({
   type: ADD_BOOK,
   payload: {
-    id: book.title,
+    id: uuidv4(),
     title: book.title,
     author: book.author,
   },
