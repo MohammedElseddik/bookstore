@@ -1,13 +1,30 @@
+import { v4 as uuidv4 } from 'uuid';
+
 const ADD_BOOK = 'bookstore/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookstore/books/REMOVE_BOOK';
-let initailState = [];
+
+let initailState = [
+  {
+    id: '1',
+    title: 'The Redux Books',
+    author: 'Suzanne Collins',
+    category: 'Action',
+  },
+
+  {
+    id: '2',
+    title: 'The React Books',
+    author: 'Frank Herbert',
+    category: 'Science Fiction',
+  },
+];
 
 export const bookAddedAction = (book) => ({
   type: ADD_BOOK,
   payload: {
+    id: uuidv4(),
     title: book.title,
     author: book.author,
-    category: book.category,
   },
 });
 
@@ -24,9 +41,9 @@ const bookReducer = (state = initailState, action) => {
       initailState = [
         ...state,
         {
+          id: action.payload.id,
           title: action.payload.title,
           author: action.payload.author,
-          category: action.payload.category,
         },
       ];
       return initailState;

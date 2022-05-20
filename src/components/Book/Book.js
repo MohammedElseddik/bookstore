@@ -1,7 +1,18 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
+import { bookRemovedAction } from '../../redux/books/book';
 
 const Book = (props) => {
-  const { bookTitle, bookAuthor, bookCategory } = props;
+  const {
+    bookTitle, bookAuthor, bookCategory, id,
+  } = props;
+
+  const dispatch = useDispatch();
+
+  const removeBookHandler = (bookId) => {
+    dispatch(bookRemovedAction(bookId));
+  };
+
   return (
     <div className="book">
       <span>{bookCategory}</span>
@@ -12,7 +23,14 @@ const Book = (props) => {
           <button type="button">Comments</button>
         </li>
         <li className="btn">
-          <button type="button">Remove</button>
+          <button
+            type="button"
+            onClick={() => {
+              removeBookHandler(id);
+            }}
+          >
+            Remove
+          </button>
         </li>
         <li className="btn">
           <button type="button">Edit</button>
