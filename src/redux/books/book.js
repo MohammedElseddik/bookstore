@@ -2,14 +2,14 @@ const ADD_BOOK = 'bookstore/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookstore/books/REMOVE_BOOK';
 let initailState = [
   {
-    id: 'book4',
+    id: 'The Redux Books',
     title: 'The Redux Books',
     author: 'Suzanne Collins',
     category: 'Action',
   },
 
   {
-    id: 'book5',
+    id: 'The Redux Books',
     title: 'The React Books',
     author: 'Frank Herbert',
     category: 'Science Fiction',
@@ -19,9 +19,9 @@ let initailState = [
 export const bookAddedAction = (book) => ({
   type: ADD_BOOK,
   payload: {
+    id: book.title,
     title: book.title,
     author: book.author,
-    category: book.category,
   },
 });
 
@@ -38,9 +38,9 @@ const bookReducer = (state = initailState, action) => {
       initailState = [
         ...state,
         {
+          id: action.payload.id,
           title: action.payload.title,
           author: action.payload.author,
-          category: action.payload.category,
         },
       ];
       return initailState;
