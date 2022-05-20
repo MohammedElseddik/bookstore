@@ -1,21 +1,14 @@
 const CHECK_CATEGORIES_STATUS = 'bookstore/categories/CATEGORY_STATUS';
-const categoryInitailState = [];
 
-export const caretgoriesStatusAction = (status) => ({
+export const categoriesStatusAction = () => ({
   type: CHECK_CATEGORIES_STATUS,
-  payload: {
-    status,
-  },
 });
 
-const categoriesReducer = (state = categoryInitailState, action) => {
+const categoriesReducer = (state = '', action) => {
+  const statusMsg = 'This section of the website app is under construction';
   switch (action.type) {
     case CHECK_CATEGORIES_STATUS:
-      return [
-        {
-          status: 'Under construction',
-        },
-      ];
+      return statusMsg;
     default:
       return state;
   }

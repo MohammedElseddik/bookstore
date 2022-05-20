@@ -20,7 +20,6 @@ const AddBookForm = () => {
 
   const addBookHandler = () => {
     dispatch(bookAddedAction(bookObject));
-    console.log(bookObject);
   };
 
   return (
