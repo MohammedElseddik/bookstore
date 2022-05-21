@@ -32,7 +32,6 @@ export const onSuccessAction = (books) => ({
 export const fetchBookApiAction = () => async (dispatch) => {
   const response = await axios.get(`${beaseUrl}books`);
   const booksFetched = Object.entries(response.data).map((item) => {
-    console.log(item);
     const { title, author } = item[1][0];
     return { item_id: item[0], title, author };
   });
@@ -40,7 +39,6 @@ export const fetchBookApiAction = () => async (dispatch) => {
 };
 
 export const addBookApi = (book) => async (dispatch) => {
-  console.log(book);
   await axios.post(`${beaseUrl}books`, book, {
     headers: {
       'Content-Type': 'application/json',

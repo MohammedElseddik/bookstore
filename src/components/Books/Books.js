@@ -6,7 +6,6 @@ import { fetchBookApiAction } from '../../redux/books/book';
 
 const Books = () => {
   const books = useSelector((state) => state.book);
-  console.log(books);
   const dispatch = useDispatch();
 
   useEffect(() => {
