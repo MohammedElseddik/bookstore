@@ -1,12 +1,11 @@
 .book {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 9.188rem 1.625rem 1.688rem;
   background-color: white;
-  padding: 1.7rem 0;
   border-radius: 4px;
-  margin: 1.3rem;
   border: solid 1px #e8e8e8;
+  margin: 1.3rem;
 }
 
 .book-details {
