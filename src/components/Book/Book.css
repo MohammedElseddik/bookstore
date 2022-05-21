@@ -1,0 +1,126 @@
+.book {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  padding: 1.7rem 0;
+  border-radius: 4px;
+  margin: 1.3rem;
+  border: solid 1px #e8e8e8;
+}
+
+.book-details {
+  justify-content: center;
+  align-items: flex-start;
+  margin: 1rem 0;
+}
+
+.category {
+  color: gray;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.2px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.2px;
+}
+
+.author {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  color: #4386bf;
+}
+
+.action-buttons {
+  display: flex;
+  list-style: none;
+}
+
+.action-buttons li {
+  margin: 1rem 1.3rem 0 0;
+  padding: 0;
+}
+
+.btn {
+  background: none;
+  color: #4386bf;
+  border: none;
+  border-left: 1px solid #4386bf;
+  padding-left: 1rem;
+}
+
+.btn-comments {
+  border: none;
+  padding: 0;
+}
+
+.book-status {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+}
+
+.percent {
+  font-size: 2rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.text-gray {
+  opacity: 0.5;
+  font-size: 0.875rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.book-chapter {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.chapter {
+  opacity: 0.5;
+  font-size: 0.813rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.chapter-title {
+  font-size: 1rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  color: #121212;
+}
+
+.book-chapter button {
+  border-radius: 3px;
+  background-color: #0290ff;
+  color: white;
+  padding: 1rem;
+}

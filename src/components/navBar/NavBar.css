@@ -1,16 +1,15 @@
 .navBar {
-    display: flex;
-    background-color: var(--white);
-    align-items: center;
-    margin: 2rem 3rem;
-    justify-content: space-between;
-    padding: 0 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 4rem;
+  background-color: #fff;
 }
 
 .navBar__menu {
-    display: flex;
-    list-style: none;
-    align-items: center;
+  display: flex;
+  list-style: none;
+  align-items: center;
 }
 
 .logo {
@@ -21,27 +20,26 @@
 }
 
 li {
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    padding: 2rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  padding: 2rem;
 }
 
 li a {
-    font-size: 1.5rem;
-    font-weight: 400;
-    letter-spacing: 1.9px;
-    text-decoration: none;
-    color: black;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 1.9px;
+  text-decoration: none;
+  color: black;
 }
 
 .user {
-    align-items: center;
-    border: 1px solid #e8e8e8;
-    border-radius: 50%;
-    display: inline-flex;
-    justify-content: center;
-    width: 50px;
+  align-items: center;
+  border: 1px solid #e8e8e8;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  width: 50px;
 }
-
