@@ -10,10 +10,9 @@ let initailState = [];
 export const bookAddedAction = (book) => ({
   type: ADD_BOOK,
   payload: {
-    item_id: book.id,
+    item_id: book.item_id,
     title: book.title,
     author: book.author,
-    category: book.category,
   },
 });
 
@@ -37,6 +36,16 @@ export const fetchBookApiAction = () => async (dispatch) => {
     return { item_id: item[0], title, author };
   });
   dispatch(onSuccessAction(booksFetched));
+};
+
+export const addBookApi = (book) => async (dispatch) => {
+  console.log(book);
+  await axios.post(`${beaseUrl}books`, book, {
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  });
+  dispatch(bookAddedAction(book));
 };
 
 const bookReducer = (state = initailState, action) => {
