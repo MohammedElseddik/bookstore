@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import Book from '../Book/Book';
 import AddBookForm from '../AddBookForm/AddBookForm';
 import { fetchBookApiAction } from '../../redux/books/book';
+import './Books.css';
 
 const Books = () => {
   const books = useSelector((state) => state.book);
@@ -20,7 +21,7 @@ const Books = () => {
             key={book.item_id}
             bookTitle={book.title}
             bookAuthor={book.author}
-            bookCategory={book.category}
+            bookCategory="default"
             id={book.item_id}
           />
         ))
