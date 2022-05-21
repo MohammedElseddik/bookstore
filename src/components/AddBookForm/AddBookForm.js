@@ -1,10 +1,11 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { bookAddedAction } from '../../redux/books/book';
+import { v4 } from 'uuid';
+import { addBookApi } from '../../redux/books/book';
 
 const AddBookForm = () => {
   const dispatch = useDispatch();
-  const bookObject = {};
+  const bookObject = { item_id: v4(), category: 'Default' };
 
   const submitHandler = (event) => {
     event.preventDefault();
@@ -19,7 +20,7 @@ const AddBookForm = () => {
   };
 
   const addBookHandler = () => {
-    dispatch(bookAddedAction(bookObject));
+    dispatch(addBookApi(bookObject));
   };
 
   return (
