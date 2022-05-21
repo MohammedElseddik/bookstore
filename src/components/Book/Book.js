@@ -1,19 +1,21 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { bookRemovedAction } from '../../redux/books/book';
+import { removeBookApi } from '../../redux/books/book';
 
 const Book = (props) => {
-  const { bookTitle, bookAuthor, id } = props;
+  const {
+    bookTitle, bookAuthor, bookCategory, id,
+  } = props;
 
   const dispatch = useDispatch();
 
   const removeBookHandler = (bookId) => {
-    dispatch(bookRemovedAction(bookId));
+    dispatch(removeBookApi(bookId));
   };
 
   return (
     <div className="book">
-      <span>category</span>
+      <span>{bookCategory}</span>
       <h3>{bookTitle}</h3>
       <span>{bookAuthor}</span>
       <ul className="buttons">

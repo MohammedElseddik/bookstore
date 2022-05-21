@@ -13,6 +13,7 @@ export const bookAddedAction = (book) => ({
     item_id: book.item_id,
     title: book.title,
     author: book.author,
+    category: book.category,
   },
 });
 
@@ -46,6 +47,11 @@ export const addBookApi = (book) => async (dispatch) => {
     },
   });
   dispatch(bookAddedAction(book));
+};
+
+export const removeBookApi = (id) => async (dispatch) => {
+  await axios.delete(`${beaseUrl}books/${id}`);
+  dispatch(bookRemovedAction(id));
 };
 
 const bookReducer = (state = initailState, action) => {
