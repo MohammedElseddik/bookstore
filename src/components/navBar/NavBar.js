@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './NavBar.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const NavBar = () => (
   <nav className="navBar">
@@ -19,7 +18,11 @@ const NavBar = () => (
       </li>
     </ul>
     <div className="user">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"></svg>
+      <img
+        className="user"
+        src="https://e7.pngegg.com/pngimages/1004/160/png-clipart-computer-icons-user-profile-social-web-others-blue-social-media.png"
+        alt="user-icon"
+      />
     </div>
   </nav>
 );
