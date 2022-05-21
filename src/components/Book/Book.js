@@ -3,9 +3,7 @@ import { useDispatch } from 'react-redux';
 import { bookRemovedAction } from '../../redux/books/book';
 
 const Book = (props) => {
-  const {
-    bookTitle, bookAuthor, bookCategory, id,
-  } = props;
+  const { bookTitle, bookAuthor, id } = props;
 
   const dispatch = useDispatch();
 
@@ -15,7 +13,7 @@ const Book = (props) => {
 
   return (
     <div className="book">
-      <span>{bookCategory}</span>
+      <span>category</span>
       <h3>{bookTitle}</h3>
       <span>{bookAuthor}</span>
       <ul className="buttons">

@@ -1,10 +1,11 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
+import { v4 } from 'uuid';
 import { bookAddedAction } from '../../redux/books/book';
 
 const AddBookForm = () => {
   const dispatch = useDispatch();
-  const bookObject = {};
+  const bookObject = { item_id: v4() };
 
   const submitHandler = (event) => {
     event.preventDefault();
